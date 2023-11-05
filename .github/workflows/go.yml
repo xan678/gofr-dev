@@ -202,10 +202,10 @@ jobs:
           golangci-lint run --timeout 9m0s
 
   static_check:
-    name: "Run CI"
+    name: "Run Sttaic Check"
     runs-on: ubuntu-latest
     steps:
       - name : Check out code into the Go module directory Sd
         uses: actions/checkout@v4
       - name : Perform static check.
-        uses: dominikh/staticcheck-action@v1.3.0w
+        uses: dominikh/staticcheck-action@v1.3.0
